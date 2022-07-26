@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 50%;
+    animation-name: Firstanimation;
+    animation-duration: 2s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-delay: 1s;
+   
+}
+@keyframes Firstanimation {
+from{
+    height: 300px;
+    width:300px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+to{
+    display: flex;
+    align-items: flex-end;
+    border-radius: 0px;
+    width: 100%;
+    height: 100vh;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+}
+

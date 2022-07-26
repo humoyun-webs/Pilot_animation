@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.bacground{
+    position: relative;
+    display: flex;
+    
+
+}
+body{
+    overflow: hidden;
+}
+
+
+.width{
+    position: absolute;
+    width: 300px;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode:forwards;
+    animation-name: pilot;
+    animation-timing-function:linear;
+    animation-duration: 20s;
+}
+@keyframes pilot{
+    0%{
+
+        bottom: 0px;
+        left: 0;
+    }
+    25%{
+        bottom: 200px;
+        left: 300px;
+
+    }
+    60%{
+        bottom: 300px;
+        
+    }
+    64%{
+        bottom: 340px;
+        
+    }
+    100%{
+        left: 1600px;
+        bottom: 400px;
+    }
+}
